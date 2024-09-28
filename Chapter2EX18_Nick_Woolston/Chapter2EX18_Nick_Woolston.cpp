@@ -24,7 +24,13 @@ const double citrusLovers = 0.58;
 int main()
 {
     cout << "A recent survey from a drink company which surveyed a total of 16,500 people found that of those participants 15% of them, or " << surveyTotal * totalBuyers << " people, bought energy drinks specifically on a weekly basis.\nFurther more, of those " << surveyTotal * totalBuyers << " people, " << surveyTotal * totalBuyers * citrusLovers << " prefer citrus-flavored energy drinks.";
-    
+    //This line is very long and very ugly. Is there anyway I can break this up?
+    //This also results in a fraction which means there was half of a person. How should i resolve that?
+    cout << endl;
+    cout << "Now enter your own number of people surveyed to see how the statistics change: ";
+    int userTotal;
+    cin >> userTotal;
+    cout << "With your variables " << userTotal * totalBuyers << " purchase energy drinks more than once a week, and of those " << userTotal * totalBuyers << ", " << userTotal * totalBuyers * citrusLovers << " prefer citrus-flavored energy drinks.";
    
 
 }
